@@ -1,51 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aras Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
+    <!-- HEADER -->
     <div class="header">
-        <div class="header-text-div">
-            <a href="#intro" class="header-text">About</a>
-            <a href="#summary" class="header-text">Summary</a>
-        </div>
-        <div class="header-icons">
-            <a href="https://tr.linkedin.com/in/arasmutluay"><img src="images/linkedin-logo.png" id="header-icons"></a>
-            <a href="https://github.com/arasmutluay"><img src="images/github-logo.png" id="header-icons"></a>
-
-        </div>
+      <div class="header-text-div">
+        <a href="#intro" class="header-text">About Me -</a>
+        <a href="#experience" class="header-text">Experience -</a>
+      </div>
+      <div class="header-icons">
+        <a href="https://tr.linkedin.com/in/arasmutluay" target="_blank"
+          ><img src="images/linkedin-logo.png" id="header-icons"
+        /></a>
+        <a href="https://github.com/arasmutluay" target="_blank"
+          ><img src="images/github-logo.png" id="header-icons"
+        /></a>
+      </div>
     </div>
 
-    <div class="intro section" id="intro">
-        <div class="my-photo">
-            <img src="images/linkedin-logo.png" class="icons">
+    <!-- INTRO -->
+    <div class="intro-section" id="intro">
+      <div class="intro-container">
+        <div class="intro-title">
+          <hr class="line">
+          <p class="intro-title-text">ABOUT ME</p>
+          <hr class="line">
         </div>
-        <div class="intro-text">
-            <h1>Hi </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aut perferendis, non ipsum saepe aperiam,
-                illo modi assumenda id repellendus rerum ab voluptatum excepturi blanditiis ea iste maiores impedit
-                officia!
-            </p>
+        <img src="images/profile-photo.png" class="profile-photo" />
+        <div class="intro-text-div">
+          <p class="intro-text">
+            Greetings! I'm Aras Mutluay, a dedicated Software Engineering
+            Student with a lifelong passion for technology and gaming. My
+            passion for problem-solving and coding has driven me forward in the
+            field of software. Beyond the digital realm, I've also been a
+            devoted gym-goer since the age of 15. It's fascinating to me how
+            working out and coding share similar principles, emphasizing the
+            importance of daily repetitions and practice. This connection
+            between physical fitness and software development is one of the
+            variables that motivated me to pursue this career path.
+          </p>
         </div>
-
-
+      </div>
     </div>
-    <div class="summary section" id="summary">
-        <div class="summary-text">
-            <h2>My Career So Far</h2>
-        </div>
-        <div class="summary-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores ipsum est numquam nulla
-                deserunt, fugiat exercitationem voluptatum mollitia molestiae esse quo dolorem tenetur, iste beatae
-                quidem, quia sed modi.</p>
-        </div>
-    </div>
-</body>
 
+    <!-- SUMMARY -->
+    <div class="experience-section" id="experience">
+      <div class="experience-container">
+        <p class="experience-title">My Working Experience</p>
+        <div class="experience-text">
+          <p>
+            I worked as an engineer at a crypto-mining farm specializing in GPU
+            mining for 1.5 years. During my time at work, I took on the
+            responsibility of maintaining and enhancing the operational
+            efficiency of the graphics cards. <br />
+
+            Throughout this period, I did extensive experiments with various
+            mining algorithms across a range of GPU models. I also adjusted
+            overclocking settings for each card and algorithm to maximize
+            performance and overall card optimization. <br />
+            Furthermore, I gained hands-on experience by replacing numerous
+            computer components, either to resolve issues or enhance the mining
+            process. As part of my role, I did comprehensive testing on
+            different operating systems, including Linux and Windows, to
+            determine which GPU brands performed more effectively on each
+            system. <br />
+            Here are some of the things that I've worked on:
+          </p>
+        </div>
+      </div>
+      <div class="experience-photos-contaniner">
+        <div class="photo1">
+          <img src="images/rig-photo.jpeg" class="rig-photo" />
+          <p class="photo1-text">
+            This was the "AMD floor" of the farm. It consisted of 24 rigs, each
+            rig had 8 GPU's on it making a total of 192 GPU's.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
