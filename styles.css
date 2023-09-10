@@ -4,12 +4,21 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: rgb(252, 247, 243);
 }
 p {
   font-family: "Oswald", sans-serif;
+}
+.seperator {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* HEADER */
@@ -45,7 +54,6 @@ p {
   color: black;
   padding-right: 5px;
   text-decoration: none;
-  
 }
 .header-text:hover {
   color: rgb(226, 204, 8);
@@ -172,6 +180,7 @@ p {
 .skills-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 .skills-title {
@@ -185,15 +194,38 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
-.skill-icon{
+.skill-icon {
   display: flex;
   justify-content: center;
-  vertical-align: center;
-  height: 150px;
-
-}
-.skill-img{
-  height: 150px;
+  align-items: center;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
 }
 
+.skill-icon img {
+  height: 250px;
+  transition: transform 0.3s;
+}
+
+.skill-text {
+  position: absolute;
+  bottom: -100%; /* Initially hidden below the icon */
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Gray background with opacity */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: bottom 0.3s, opacity 0.3s; /* Add transitions for smooth animation */
+}
+
+.skill-icon:hover img {
+  transform: translateY(250px); /* Move the image downward on hover */
+}
+
+.skill-icon:hover .skill-text {
+  bottom: 0; /* Move the text upward on hover */
+  opacity: 1; /* Show the text on hover */
+  color: black;
+}
 
