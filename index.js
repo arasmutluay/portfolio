@@ -1,3 +1,2 @@
-function scroll(){
-    document.querySelectorAll("")
-}
+$("video").prop("volume", 0.05);
+

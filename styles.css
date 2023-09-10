@@ -6,7 +6,10 @@ body {
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(243, 243, 252);
+  background-color: rgb(252, 247, 243);
+}
+p {
+  font-family: "Oswald", sans-serif;
 }
 
 /* HEADER */
@@ -22,23 +25,34 @@ body {
   z-index: 1;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
-
+.header-name {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
 .header-text-div {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 10px;
   height: 1.5rem;
 }
 
 .header-text {
+  font-family: "Oswald", sans-serif;
   color: black;
   padding-right: 5px;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  
+}
+.header-text:hover {
+  color: rgb(226, 204, 8);
 }
 
-.header-text:hover {
-  color: brown;
+.header-icons {
+  display: flex;
 }
 
 #header-icons {
@@ -47,16 +61,20 @@ body {
   right: 0;
 }
 
-#header-icons:hover {
-  padding-top: 0.1rem;
+.link1:hover #header-icons {
+  filter: brightness(1);
 }
+.link1:hover {
+  background-color: rgb(226, 204, 8);
+}
+
 /* INTRO */
 .intro-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .intro-container {
   width: 50%;
@@ -66,28 +84,26 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 3%;
-  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
 }
-.line{
-    width: 50%;
-    height: 10px;
+.line {
+  width: 95%;
+  border: 1px solid rgb(226, 204, 8);
+  background-color: rgb(226, 204, 8);
+  border-radius: 5px;
+  height: 1px;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
-.intro-title{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .intro-title-text {
-  font-family: "Oswald", sans-serif;
   font-size: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
 }
 .intro-text-div {
   width: 90%;
   margin-top: 15px;
-}
-.intro-text {
-  font-family: "Montserrat", sans-serif;
 }
 
 .profile-photo {
@@ -100,10 +116,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .experience-title {
-  font-family: "Oswald", sans-serif;
   font-size: 60px;
   margin-bottom: 20px;
   margin-top: 0;
@@ -115,24 +130,70 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 3%;
-  width: 30%;
-  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+  width: 60%;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
   margin-bottom: 20px;
 }
 .experience-text {
   width: 90%;
 }
-.experience-photos-contaniner{
-    background-color: white;
-    border-radius: 1%;
-    width: 80%;
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+.experience-photos-contaniner {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1%;
+  width: 80%;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+  height: 550px;
+}
+.experience-content {
+  border: solid;
+  border-width: 0.15rem;
+  border-radius: 3%;
+  border-color: rgb(226, 204, 8);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0.5rem;
 }
 .rig-photo {
   width: 100%;
   border-radius: 1%;
 }
-.photo1{
-    width: 25%;
-    margin: 0.5rem;
+
+.rig-video {
+  width: 100%;
 }
+
+/* SKILLS */
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.skills-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+.skills-icons-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.skill-icon{
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  height: 150px;
+
+}
+.skill-img{
+  height: 150px;
+}
+
+

@@ -20,37 +20,46 @@
   <body>
     <!-- HEADER -->
     <div class="header">
+      <p class="header-name">Aras MUTLUAY</p>
+
       <div class="header-text-div">
         <a href="#intro" class="header-text">About Me -</a>
         <a href="#experience" class="header-text">Experience -</a>
+        <a href="#skills" class="header-text">My Skills -</a>
       </div>
       <div class="header-icons">
-        <a href="https://tr.linkedin.com/in/arasmutluay" target="_blank"
-          ><img src="images/linkedin-logo.png" id="header-icons"
-        /></a>
-        <a href="https://github.com/arasmutluay" target="_blank"
-          ><img src="images/github-logo.png" id="header-icons"
-        /></a>
+        <div class="link1">
+          <a href="https://tr.linkedin.com/in/arasmutluay" target="_blank"
+            ><img src="images/linkedin-logo.png" id="header-icons"
+          /></a>
+        </div>
+        <div class="link1">
+          <a href="https://github.com/arasmutluay" target="_blank"
+            ><img src="images/github-logo.png" id="header-icons"
+          /></a>
+        </div>
       </div>
     </div>
 
     <!-- INTRO -->
     <div class="intro-section" id="intro">
       <div class="intro-container">
-        <div class="intro-title">
-          <hr class="line">
-          <p class="intro-title-text">ABOUT ME</p>
-          <hr class="line">
-        </div>
+        <p class="intro-title-text">ABOUT ME</p>
+        <hr class="line" />
         <img src="images/profile-photo.png" class="profile-photo" />
         <div class="intro-text-div">
           <p class="intro-text">
             Greetings! I'm Aras Mutluay, a dedicated Software Engineering
-            Student with a lifelong passion for technology and gaming. My
-            passion for problem-solving and coding has driven me forward in the
-            field of software. Beyond the digital realm, I've also been a
-            devoted gym-goer since the age of 15. It's fascinating to me how
-            working out and coding share similar principles, emphasizing the
+            Student currently living in Istanbul with a lifelong passion for
+            technology and gaming. My passion for problem-solving and coding has
+            driven me forward in the field of software. I'm deeply immersed in
+            learning JavaScript, improving my skills to become a proficient Web
+            Developer. In addition to web development and gaming, I also have a
+            growing fascination with cybersecurity. As our digital world
+            continues to expand, ensuring the security of online systems and
+            data becomes increasingly vital. Beyond the digital realm, I've also
+            been a devoted gym-goer since the age of 15. It's fascinating to me
+            how working out and coding share similar principles, emphasizing the
             importance of daily repetitions and practice. This connection
             between physical fitness and software development is one of the
             variables that motivated me to pursue this career path.
@@ -59,10 +68,11 @@
       </div>
     </div>
 
-    <!-- SUMMARY -->
+    <!-- EXPERIENCE -->
     <div class="experience-section" id="experience">
       <div class="experience-container">
         <p class="experience-title">My Working Experience</p>
+        <hr class="line" />
         <div class="experience-text">
           <p>
             I worked as an engineer at a crypto-mining farm specializing in GPU
@@ -85,14 +95,85 @@
         </div>
       </div>
       <div class="experience-photos-contaniner">
-        <div class="photo1">
+        <div class="experience-content">
           <img src="images/rig-photo.jpeg" class="rig-photo" />
           <p class="photo1-text">
             This was the "AMD floor" of the farm. It consisted of 24 rigs, each
             rig had 8 GPU's on it making a total of 192 GPU's.
           </p>
         </div>
+        <div class="experience-content">
+          <video
+            class="rig-video"
+            controls="controls"
+            width="50%"
+            height="auto"
+          >
+            <source src="images/Maden-video.mp4" type="video/mp4" />
+          </video>
+          <p class="photo1-text">
+            This was our second floor; it housed both NVIDIA cards, primarily
+            RTX 3090 models, and AMD cards. This floor experienced the most
+            issues because the NVIDIA cards were overheating due to inadequate
+            stock fans and other variables. We had to replace fans, adjust
+            overclocking settings, and select algorithms specific to the RTX
+            3090 cards. Eventually, we implemented a ventilation system for the
+            farm since, at one point, temperatures were reaching 60°C.
+          </p>
+        </div>
+        <div class="experience-content">
+          <video
+            class="hes-video"
+            controls="controls"
+            width="50%"
+            height="auto"
+            volume="10%"
+          >
+            <source src="images/HES-video.mp4" type="video/mp4" />
+          </video>
+          <p class="photo1-text">
+            This is a turbine for a Hydropower Plant. We moved the farm to a
+            hydroelectric power plant to solve electricity, which is the biggest
+            part of the cost.
+          </p>
+        </div>
       </div>
     </div>
+    <!-- SKILLS -->
+    <div class="skills-section" id="skills">
+      <div class="skills-container">
+        <p class="skills-title">My Skills</p>
+        <div class="skills-icons-div">
+          <div class="skill-icon">
+            <img src="images/html-logo.png" class="skill-img" alt="HTML Logo" />
+          </div>
+          <div class="skill-icon">
+            <img src="images/css-logo.png" class="skill-img" alt="CSS Logo" />
+          </div>
+          <div class="skill-icon">
+            <img
+              src="images/javascript-logo.png"
+              class="skill-img"
+              alt="JavaScript Logo"
+            />
+          </div>
+          <div class="skill-icon">
+            <img src="images/java-icon.png" class="skill-img" alt="Java Icon" />
+          </div>
+          <div class="skill-icon">
+            <img
+              src="images/Python-logo.png"
+              class="skill-img"
+              alt="Python Logo"
+            />
+          </div>
+          <div class="skill-icon">
+            <img src="images/C-logo.png" class="skill-img" alt="C Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
