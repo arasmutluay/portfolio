@@ -9,16 +9,17 @@ body {
     "Lucida Sans", Arial, sans-serif;
   background-color: rgb(252, 247, 243);
 }
+
 p {
   font-family: "Oswald", sans-serif;
 }
+
 .seperator {
   border: dotted black 6px;
   border-bottom: none;
   width: 4%;
   margin: 100px auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  
 }
 
 /* HEADER */
@@ -34,6 +35,7 @@ p {
   z-index: 1;
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
+
 .header-name {
   font-family: "Oswald", sans-serif;
   display: flex;
@@ -41,6 +43,7 @@ p {
   align-items: center;
   margin-left: 1rem;
 }
+
 .header-text-div {
   display: flex;
   justify-content: center;
@@ -52,9 +55,10 @@ p {
 .header-text {
   font-family: "Oswald", sans-serif;
   color: black;
-  padding-right: 5px;
+  margin-right: 4rem;
   text-decoration: none;
 }
+
 .header-text:hover {
   color: rgb(226, 204, 8);
 }
@@ -72,6 +76,7 @@ p {
 .link1:hover #header-icons {
   filter: brightness(1);
 }
+
 .link1:hover {
   background-color: rgb(226, 204, 8);
 }
@@ -84,6 +89,7 @@ p {
   align-items: center;
   min-height: 100vh;
 }
+
 .intro-container {
   width: 50%;
   display: flex;
@@ -93,29 +99,30 @@ p {
   background-color: white;
   border-radius: 3%;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+  margin-top: 2.5rem;
 }
+
 .line {
   width: 95%;
   border: 1px solid rgb(226, 204, 8);
   background-color: rgb(226, 204, 8);
   border-radius: 5px;
   height: 1px;
-  margin-bottom: 2rem;
   margin-top: 0;
 }
 
 .intro-title-text {
   font-size: 60px;
-  margin-bottom: 10px;
   font-family: "Oswald", sans-serif;
 }
+
 .intro-text-div {
   width: 90%;
   margin-top: 15px;
 }
 
 .profile-photo {
-  height: 10rem;
+  height: 200px;
 }
 
 /* EXPERIENCE */
@@ -126,25 +133,28 @@ p {
   align-items: center;
   min-height: 100vh;
 }
+
 .experience-title {
   font-size: 60px;
   margin-bottom: 20px;
   margin-top: 0;
 }
+
 .experience-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 3%;
   width: 60%;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
-  margin-bottom: 20px;
+
 }
+
 .experience-text {
   width: 90%;
 }
+
 .experience-photos-contaniner {
   display: flex;
   justify-content: space-between;
@@ -152,8 +162,9 @@ p {
   border-radius: 1%;
   width: 80%;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
-  height: 550px;
+  height: 30rem;
 }
+
 .experience-content {
   border: solid;
   border-width: 0.15rem;
@@ -166,6 +177,7 @@ p {
   width: 30%;
   margin: 0.5rem;
 }
+
 .rig-photo {
   width: 100%;
   border-radius: 1%;
@@ -183,49 +195,116 @@ p {
   align-items: center;
   min-height: 100vh;
 }
+
 .skills-title {
   display: flex;
   justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 60px;
 }
+
 .skills-icons-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
+
 .skill-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 12rem;
   position: relative;
   overflow: hidden;
 }
 
 .skill-icon img {
-  height: 250px;
+  height: 12rem;
   transition: transform 0.3s;
 }
 
 .skill-text {
+  font-size: smaller;
   position: absolute;
-  bottom: -100%; /* Initially hidden below the icon */
+  bottom: -100%;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Gray background with opacity */
+  background-color: transparent;
   text-align: center;
-  opacity: 0; /* Initially hidden */
-  transition: bottom 0.3s, opacity 0.3s; /* Add transitions for smooth animation */
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
 }
 
 .skill-icon:hover img {
-  transform: translateY(250px); /* Move the image downward on hover */
+  transform: translateY(12rem);
 }
 
 .skill-icon:hover .skill-text {
-  bottom: 0; /* Move the text upward on hover */
-  opacity: 1; /* Show the text on hover */
+  bottom: 0;
+  opacity: 1;
   color: black;
 }
 
+/* FOOTER */
+
+.footer {
+  height: 11rem;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.contact-div {
+  margin: 0 10rem 0 0;
+}
+@media(width: 480px){
+  
+}
+.contact-text {
+  margin: 0;
+  padding: 0;
+}
+
+.submit-div {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.submit-div button {
+  width: 50%;
+  align-self: center;
+  margin: 0.2rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input,
+textarea {
+  width: 10rem;
+  margin-left: 0.5rem;
+
+}
+
+.information-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
