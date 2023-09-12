@@ -7,11 +7,7 @@ body {
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: rgb(252, 247, 243);
-}
-
-p {
-  font-family: "Oswald", sans-serif;
+  background-color: rgb(229, 229, 203);
 }
 
 .seperator {
@@ -19,7 +15,6 @@ p {
   border-bottom: none;
   width: 4%;
   margin: 100px auto;
-  
 }
 
 /* HEADER */
@@ -27,7 +22,7 @@ p {
   display: flex;
   justify-content: space-between;
   height: 40px;
-  background-color: white;
+  background-color: rgb(60, 42, 33);
   position: fixed;
   top: 0;
   left: 0;
@@ -42,6 +37,7 @@ p {
   justify-content: center;
   align-items: center;
   margin-left: 1rem;
+  color: white;
 }
 
 .header-text-div {
@@ -49,36 +45,39 @@ p {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  height: 1.5rem;
 }
 
 .header-text {
   font-family: "Oswald", sans-serif;
-  color: black;
+  color: white;
   margin-right: 4rem;
   text-decoration: none;
+  transition: transform 0.2s;
 }
 
 .header-text:hover {
-  color: rgb(226, 204, 8);
+  transform: scale(1.1);
+  color: rgb(213, 206, 163);
+}
+.header-text.hovered {
+  transform: scale(1.1);
+  color: rgb(213, 206, 163);
 }
 
 .header-icons {
   display: flex;
 }
 
-#header-icons {
-  margin: 10px;
-  height: 1.5rem;
-  right: 0;
+.svg-container {
+  margin: 5px 12px 5px 5px;
+  transition: transform 0.2s;
+  fill: currentColor;
 }
 
-.link1:hover #header-icons {
-  filter: brightness(1);
-}
-
-.link1:hover {
-  background-color: rgb(226, 204, 8);
+.svg-link:hover .svg-container {
+  transform: scale(1.1);
+  filter: brightness(0.8) sepia(1) brightness(0.7) contrast(1);
+  fill: rgb(213, 206, 163);
 }
 
 /* INTRO */
@@ -96,16 +95,20 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(213, 206, 163);
   border-radius: 3%;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
   margin-top: 2.5rem;
+  transition: transform 0.2s;
+}
+.intro-container:hover {
+  transform: scale(1.01);
 }
 
 .line {
   width: 95%;
-  border: 1px solid rgb(226, 204, 8);
-  background-color: rgb(226, 204, 8);
+  border: 1px solid rgb(60, 42, 33);
+  background-color: rgb(60, 42, 33);
   border-radius: 5px;
   height: 1px;
   margin-top: 0;
@@ -114,77 +117,109 @@ p {
 .intro-title-text {
   font-size: 60px;
   font-family: "Oswald", sans-serif;
+  margin: 20px;
+  color: rgb(60, 42, 33);
 }
 
 .intro-text-div {
   width: 90%;
   margin-top: 15px;
 }
+.intro-text {
+  font-family: "Poppins", sans-serif;
+  color: rgb(26, 18, 11);
+}
 
 .profile-photo {
   height: 200px;
 }
 
-/* EXPERIENCE */
+/* Experience */
 .experience-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: 20px;
 }
 
 .experience-title {
-  font-size: 60px;
+  font-size: 36px;
   margin-bottom: 20px;
-  margin-top: 0;
+  color: rgb(60, 42, 33);
 }
 
 .experience-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 60%;
-  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
-
+  background-color: rgb(213, 206, 163);
+  width: 20%;
+  padding: 20px;
+  margin-top: 60px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 3%;
+  transition: transform 0.2s;
+}
+.experience-container:hover {
+  transform: scale(1.01);
 }
 
 .experience-text {
-  width: 90%;
+  width: 100%;
+}
+.experience-text > p {
+  font-family: "Poppins", sans-serif;
 }
 
-.experience-photos-contaniner {
+.experience-photos-container {
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 1%;
-  width: 80%;
-  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
-  height: 30rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  padding: 20px;
 }
-
-.experience-content {
-  border: solid;
-  border-width: 0.15rem;
-  border-radius: 3%;
-  border-color: rgb(226, 204, 8);
-  padding: 0.5rem;
+.experience-content1 {
+  height: 350px;
+}
+.experience-content1,
+.experience-content2 {
+  position: relative;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  margin: 0.5rem;
+  width: 30rem;
+  margin: 1rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 3%;
+  background-color: rgb(213, 206, 163);
+  transition: transform 0.2s;
+}
+.experience-content1:hover {
+  transform: scale(1.01);
+}
+.experience-content2:hover {
+  transform: scale(1.01);
 }
 
 .rig-photo {
-  width: 100%;
-  border-radius: 1%;
+  padding: 10px;
+  width: 90%;
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .rig-video {
-  width: 100%;
+  padding: 10px;
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  max-height: none;
+}
+.photo1-text-div {
+  width: 90%;
+}
+.photo1-text {
+  font-family: "Poppins", sans-serif;
 }
 
 /* SKILLS */
@@ -195,12 +230,23 @@ p {
   align-items: center;
   min-height: 100vh;
 }
+.skills-container {
+  padding-bottom: 80px;
+  background-color: rgb(213, 206, 163);
+  border-radius: 3%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+.skills-container:hover {
+  transform: scale(1.01);
+}
 
 .skills-title {
   display: flex;
   justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 60px;
+  color: rgb(60, 42, 33);
 }
 
 .skills-icons-div {
@@ -224,11 +270,11 @@ p {
 }
 
 .skill-text {
-  font-size: smaller;
+  font-size: 1rem;
   position: absolute;
   bottom: -100%;
-  width: 50%;
-  height: 100%;
+  width: 70%;
+  height: 13rem;
   background-color: transparent;
   text-align: center;
   opacity: 0;
@@ -244,67 +290,113 @@ p {
   opacity: 1;
   color: black;
 }
-
-/* FOOTER */
-
-.footer {
-  height: 11rem;
-  margin: 0px;
-  padding: 0;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact-title {
+/* SUBMIT */
+.submit-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
+  align-items: center;
+  flex-direction: column;
 }
-
-.contact-div {
-  margin: 0 10rem 0 0;
-}
-@media(width: 480px){
-  
-}
-.contact-text {
-  margin: 0;
-  padding: 0;
-}
-
 .submit-div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-
+  background-color: rgb(213, 206, 163);
+  border-radius: 3%;
+  padding: 2rem 3rem 3rem 3rem;
+  transition: transform 0.2s;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-.submit-div button {
-  width: 50%;
-  align-self: center;
-  margin: 0.2rem;
+.submit-div:hover {
+  transform: scale(1.01);
 }
-
-.submit {
-  display: flex;
-  justify-content: flex-start;
-}
-
-input,
-textarea {
-  width: 10rem;
-  margin-left: 0.5rem;
-
+.submit-title {
+  color: rgb(60, 42, 33);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
 }
 
 .information-div {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.name-mail {
+  display: flex;
   justify-content: space-between;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.submit-button {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+button[type="submit"] {
+  background-color: rgb(60, 42, 33);
+  color: rgb(229, 229, 203);
+  border: none;
+  width: 50%;
+}
+.submit-button:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: rgb(60, 42, 33);
+  height: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.contact-div h1 {
+  font-weight: 100;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  margin-right: 100px;
+}
+
+.contact-text p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.contact-text a {
+  text-decoration: none;
+  color: white;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
