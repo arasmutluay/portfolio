@@ -27,7 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     highlightHeaderLink();
-
     window.addEventListener("scroll", highlightHeaderLink);
+
+});
+
+// FOR HAMBURGER BAR DROPDOWN
+$(document).ready(function () {
+    $(".hamburger-icon").click(function () {
+        var mobileMenu = $(".mobile-menu");
+        if (mobileMenu.css("display") === "flex") {
+            mobileMenu.css("display", "none");
+        } else {
+            mobileMenu.css("display", "flex");
+        }
+    });
 });
 
